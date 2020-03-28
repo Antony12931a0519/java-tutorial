@@ -43,3 +43,29 @@ flow of code..
 controller----> service---->dao---->db
 controller<---- service<----dao<----db
 
+
+
+
+
+Pathparam
+---------------
+localhost:9090/details/nita@gmail.com
+
+
+@PathParam(Datatype nameofvalue)
+
+
+localhost:9090/details/{email}
+
+@PathParam(String email)
+
+
+
+https://www.shawacademy.com/learning?userid=
+https://www.shawacademy.com/learning/101
+
+
+
+
+@QueryParam(datatype name)
+

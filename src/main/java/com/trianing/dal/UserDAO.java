@@ -87,6 +87,88 @@ public class UserDAO {
 
 	}
 	
+	
+	public UserModel getUserDetailsByEmail(String email) {
+		UserModel user = null;
+
+		try {
+
+			user = new UserModel();
+			// registering the driver
+			Class.forName("com.mysql.jdbc.Driver");
+
+			// creation of connection
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/friendbook", "root", "root");
+
+			// creation of query
+			// select * from user where email='ali@gmail.com';
+			String sql = "select fname,email,mobile from user where email=?";
+
+			// create a prpepared statment
+		PreparedStatement stmt = con.prepareStatement(sql);
+			stmt.setString(1, email);
+//			stmt.setString(2, "lkjeslfjw");
+
+			// select * from user where email=ali@gmail.com;
+			ResultSet rs = stmt.executeQuery(sql);
+
+			while (rs.next()) {
+
+				user.setFname(rs.getString("fname"));
+				user.setEmail(rs.getString("email"));
+				user.setMobile(rs.getString("mobile"));
+
+			}
+
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+		return user;
+
+	}
+	
+	public UserModel getUserDetailsByUserId(int userId) {
+		UserModel user = null;
+
+		try {
+
+			user = new UserModel();
+			// registering the driver
+			Class.forName("com.mysql.jdbc.Driver");
+
+			// creation of connection
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/friendbook", "root", "root");
+
+			// creation of query
+			// select * from user where email='ali@gmail.com';
+			String sql = "select fname,email,mobile from user where userId=?";
+
+			// create a prpepared statment
+		PreparedStatement stmt = con.prepareStatement(sql);
+			stmt.setInt(1, userId);
+//			stmt.setString(2, "lkjeslfjw");
+
+			// select * from user where email=ali@gmail.com;
+			ResultSet rs = stmt.executeQuery(sql);
+
+			while (rs.next()) {
+
+				user.setFname(rs.getString("fname"));
+				user.setEmail(rs.getString("email"));
+				user.setMobile(rs.getString("mobile"));
+
+			}
+
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+		return user;
+
+	}
+
+	
+
+	
 	public int addUser(UserModel userModel) {
 		
 		try {

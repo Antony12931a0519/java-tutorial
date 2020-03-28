@@ -20,6 +20,13 @@ public class UserService {
 		return userDao.getUserDetailsByEmail(email);
 
 	}
+	
+	public UserModel getUserDetailsByEmail(String email) {
+
+		UserDAO userDao = new UserDAO();
+		return userDao.getUserDetailsByEmail(email);
+
+	}
 
 	public String addUser(UserModel userModel) {
 
