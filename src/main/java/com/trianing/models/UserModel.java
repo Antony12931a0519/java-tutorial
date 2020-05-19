@@ -5,8 +5,15 @@ public class UserModel {
 	private String fname;
 	private String email;
 	private String mobile;
+	private int  userId;
 	
 	
+	public int getUserId() {
+		return userId;
+	}
+	public void setUserId(int userId) {
+		this.userId = userId;
+	}
 	/**
 	 * @return the fname
 	 */

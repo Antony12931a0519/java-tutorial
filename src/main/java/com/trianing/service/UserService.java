@@ -20,5 +20,38 @@ public class UserService {
 		return userDao.getUserDetailsByEmail(email);
 
 	}
+	
+	public UserModel getUserDetailsByEmail(String email) {
+
+		UserDAO userDao = new UserDAO();
+		return userDao.getUserDetailsByEmail(email);
+
+	}
+
+	public String addUser(UserModel userModel) {
+
+		UserDAO userDao = new UserDAO();
+		int result = userDao.addUser(userModel);
+
+		if (result > 0) {
+			return "User has been added successfully.";
+		} else {
+			return "User details failed to add.";
+		}
+
+	}
+	
+	public String updateUser(UserModel userModel) {
+
+		UserDAO userDao = new UserDAO();
+		int result = userDao.updateUser(userModel);
+
+		if (result > 0) {
+			return "User has been updated successfully.";
+		} else {
+			return "User details failed to update.";
+		}
+
+	}
 
 }
