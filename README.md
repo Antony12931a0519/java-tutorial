@@ -1,71 +1,186 @@
-# restful-services-11-30
+Core java:
 
-[
+Data types
 
-{
-},{}
+Different data types
+ 
 
+Variables
 
-]
+Different types of variables
 
-Sample json format
-[
-    {
-        "email": "aa@gmail.com",
-        "fname": "aa",
-        "mobile": "9988776655"
-    },
-    {
-        "email": "swamy@gmail.com",
-        "fname": "swamy",
-        "mobile": "9988776655"
-    },
-    {
-        "email": "ali@gmail.com",
-        "fname": "ali ahmad",
-        "mobile": "9553885912"
-    },
-    {
-        "email": "ram@gmail.com",
-        "fname": "ram",
-        "mobile": "8765431256"
-    },
-    {
-        "email": "sajid@gmail.com",
-        "fname": "sajid",
-        "mobile": "8121559966"
-    }
-]
+120(int)
+"PAtel"(String)
+
+Integer--int 0
+Float  float 0.0
+Double double 0.0
+Character char ''
+String String ""
+Short  short 0
+Byte byte 0
+Long long 0
+Boolean bollean false
+
+Real numbers
+------------------
+
+Byte/short--small values
+
+32,200--int
+
+200000 ---long
 
 
-flow of code..
+Decimel point:
+------------------
+Float(8 decimel)/double(15 decimel)
 
-controller----> service---->dao---->db
-controller<---- service<----dao<----db
+String:
+-------
+"knwkfnqk3213123 234234,nlsdf"
 
+Char:
+---------
+'1','A','&'
 
+Boolean:
+---------
 
-
-
-Pathparam
----------------
-localhost:9090/details/nita@gmail.com
-
-
-@PathParam(Datatype nameofvalue)
-
-
-localhost:9090/details/{email}
-
-@PathParam(String email)
+True/false
 
 
+100
 
-https://www.shawacademy.com/learning?userid=
-https://www.shawacademy.com/learning/101
+Syntax:
+-----
+
+Datatype variablename = value;
+
+Variable declaration/variable initalization
+
+
+Eg:  int number = 100;--variable initilzation
+
+int number; variable declarion
+
+Number=10;
+
+
+Student{
+
+Name=knfwe
+Add=fnkwefw
+Sid=nwkf
+Mobile=
+
+}
+
+Student{
+
+Name=knfwe
+Add=fnkwefw
+Sid=nwkf
+Mobile=fnewnf
+
+}
+
+----------------------------------------------------------------------------------------
+Class:
+--------
+
+Systax:
+
+Class ClassName {
+body
+
+}
+
+
+Eg:
+
+.java
+Student.Java
+
+Class Student{
+
+Int sid;
+String name;
+String addess;
+String mobile;
+
+System.out.println("csdcksdk")
+System.out.println(sid)
+
+Sysout(ctrl+space)
+
+
+
+}
+
+
+
+Method:
+Public static void main(String[] ar){
+
+}
+
+
+Class HelloWorld{
+
+Static String name = "Abc"--static variable
+
+String name1 = "Abc"--non static variable(instance variable)
+
+Final String name1 = "Abc"--non static variable(instance variable)--final  non static varibale
+Final static String name1 = "Abc"--non static variable(instance variable)--final static  varibale
+
+
+
+name = "wfqlfq";
+
+Main(){
+
+Classname ref = new Classname();
+HelloWorld helloworld = new  HelloWorld ();
+String name = "Abc"--static variable--local variables
+
+Sysout(name);
+
+Sysout(name);
+Sysout(HelloWorld.name);
+Sysout(helloworld .name)
+
+
+Sysout(helloworld .name1);
 
 
 
 
-@QueryParam(datatype name)
+
+
+
+}
+
+
+Jdk
+Eclipse/intellij/atom/sublime
+
+
+
+
+Instance variable
+Local variable
+Final variable
+Static variable
+
+
+Static-keyword datattype variable = 12;
+
+
+
+
+
+
+
 
