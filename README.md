@@ -177,6 +177,17 @@ Static variable
 
 Static-keyword datattype variable = 12;
 
+methods:
+----------
+access specifiers   access modifier    return type*(data types)              method name*      method arguments
+public            static             void                     main            (String [] ar){
+
+
+method implementation*
+
+
+}
+
 
 
 
