@@ -188,9 +188,64 @@ method implementation*
 
 }
 
+instance methods
+
+static /non static methods
+
+final methods
+
+----------------------------------------------------
+
+inheritance:
+------------
+re usability of code
+
+
+atleast 2 classes 
+
+parent(10 methods)
+
+child(2 months)
+
+extends
+
+
+class parent{
+
+m1(){
+}
+
+m2(){
+}
+
+}
+
+class child extends parents{
+
+
+}
+
+polymorphism:
+-------------
+compile time poly(method overloading)
+runtime poly(method overriding)
 
 
 
+-----------------------------------------
+
+abstarct method:
+---------------
+
+method without implementaion
+
+eg:  public void add();
+
+
+interfaces:
+---------------
+
+it is same as class but only contains abstract methods
 
 
 
